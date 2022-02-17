@@ -1,0 +1,32 @@
+@media screen and (max-width: 768px) {
+  #intro-h1, #intro-h3 {
+    line-height: calc((70 / var(--screen-size))*100*1vw) !important;
+    font-size: calc((18 / var(--screen-size))*100*1vw) !important;
+  }
+  .menu-link{
+    position: absolute !important;
+  }
+  .Header_root__sMz8f {
+    padding: calc((10 / var(--screen-size))*100*1vw) !important;
+  }
+  .ahimsa-logo{
+    width: 55px !important;
+  }
+  .ahimsa-text{
+    letter-spacing: 0.5px !important;
+    font-size: 12px !important;
+    padding-top: 10px !important;
+  }
+  .Description_headline__eAwb0{
+    padding: 0px 20px 20px 20px !important;
+  }
+  .Description_titles__QN9Gc{
+    font-size: calc((12 / var(--screen-size))*100*1vw) !important;
+  }
+  .normal-view{
+    display: none !important;
+  }
+  .responsive-view{
+    display: block !important;
+  }
+}

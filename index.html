@@ -7,188 +7,348 @@
     <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, user-scalable=no" />
     <meta name="keywords" content="" />
     <meta name="description" content="" />
-
     <link rel="stylesheet" href="css/scroll.css" />
     <link rel="stylesheet" href="css/f3899f75dba6edb5.css" />
     <link rel="stylesheet" href="css/a0a4f00c6c8ae6e9.css" />
     <link rel="stylesheet" href="css/7798cd9431c91734.css" />
     <link rel="stylesheet" href="css/1687f485bf34a7e8.css" />
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
-    <script>
-        window.console = window.console || function(t) {};
-    </script>
-    <script>
-    if (document.location.search.match(/type=embed/gi)) {
-        window.parent.postMessage("resize", "*");
-    }
-    </script>
+    <link rel="stylesheet" href="css/responsive.css" />
 </head>
 
-<body>
+<body id="scroll-container">
     <header style="display: none;" class="Header_root__sMz8f" id="header-anchor">
-            <div class="Header_menuWrapper__4fgxo">
-                <div style="display:flex;width:100%;" class="Header_menuWrapperLogo__RTgY_">
-                    <img  style="width: 60px;" src="images/ahimsa-logo.png" alt="ahimsa global logo">
-                    <span style="text-align: left;color: #7993cb;text-transform: uppercase;letter-spacing: 1px;font-size:14px;">Advanced Health Information management<br> And Social Analytics</span>
+        <div class="Header_menuWrapper__4fgxo">
+            <div style="display:flex;width:100%;" class="Header_menuWrapperLogo__RTgY_">
+                <img class="ahimsa-logo" style="width: 60px;" src="images/ahimsa-logo.png" alt="ahimsa global logo">
+                <span class="ahimsa-text" style="text-align: left;color: #7993cb;text-transform: uppercase;letter-spacing: 1px;font-size:14px;">Advanced Health Information management<br> And Social Analytics</span>
+            </div>
+            <div class="menu-link" style="display:flex;margin-left:50%;width:0%;">
+                <div class="Dropdown_root__j6MYC Header_menuListItem__rWgz2">
+                    <div class="Dropdown_header__13MbM">
+                        <div class="Dropdown_headerTitle__H7p37"><a href="#product">products</a></div>
+                    </div>
                 </div>
-                <div class="" style="display:flex;margin-left:50%;width:0%;">
-                    <div class="Dropdown_root__j6MYC Header_menuListItem__rWgz2">
-                        <div class="Dropdown_header__13MbM">
-                            <div class="Dropdown_headerTitle__H7p37"><a href="#product">products</a></div>
-                        </div>
+                <div class="Dropdown_root__j6MYC Header_menuListItem__rWgz2">
+                    <div class="Dropdown_header__13MbM">
+                        <div class="Dropdown_headerTitle__H7p37"><a href="#about">about</a></div>
                     </div>
-                    <div class="Dropdown_root__j6MYC Header_menuListItem__rWgz2">
-                        <div class="Dropdown_header__13MbM">
-                            <div class="Dropdown_headerTitle__H7p37"><a href="#about">about</a></div>
-                        </div>
+                </div>
+                <div class="Dropdown_root__j6MYC Header_menuListItem__rWgz2">
+                    <div class="Dropdown_header__13MbM">
+                        <div class="Dropdown_headerTitle__H7p37"><a href="#contact">contact</a></div>
                     </div>
-                    <div class="Dropdown_root__j6MYC Header_menuListItem__rWgz2">
-                        <div class="Dropdown_header__13MbM">
-                            <div class="Dropdown_headerTitle__H7p37"><a href="#contact">contact</a></div>
-                        </div>
-                    </div>
-                    
                 </div>
             </div>
-            <div class="Header_mobileMenuButton__9qrK8"><svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="Header_mobileMenuButtonIcon__TiMFu">
-                    <rect x="0.734375" y="0.758057" width="20" height="1" fill="white"></rect>
-                    <rect x="0.734375" y="14.7581" width="20" height="1" fill="white"></rect>
-                    <rect x="0.734375" y="7.75806" width="20" height="1" fill="white"></rect>
-                </svg></div>
-            <div class="MobileMenu_root__xl8fC Animated_animated__ByRTS" style="pointer-events:none;opacity:0">
-                <div class="MobileMenu_headline___E_Ze"><svg width="59" height="26" viewBox="0 0 59 26" fill="none" xmlns="http://www.w3.org/2000/svg" class="MobileMenu_headlineLogo__Ux7Lo">
-                        <path d="M17.2878 7.38529C17.2878 1.62826 14.0709 0.500244 8.5144 0.500244H0V25.1661H4.09426V14.2286H8.27209L13.5696 25.1661H18.2069L12.241 13.6771C14.2046 13.1006 17.2878 11.538 17.2878 7.38529ZM13.1936 7.38529C13.1936 11.2205 11.9903 13.0086 9.42516 13.0086H4.09426V1.74523H8.5144C11.7898 1.74523 13.1936 3.42472 13.1936 7.36023V7.38529Z" fill="white"></path>
-                        <path d="M31.6103 7.11791C30.2989 7.09812 29.0052 7.42162 27.8576 8.05628C26.7099 8.69094 25.7481 9.61472 25.0678 10.7359V0.500244H20.9902V25.1661H25.0678V14.0531C25.0678 11.8973 27.1483 8.76397 30.407 8.76397C33.39 8.76397 33.9582 10.4351 33.9582 13.5601V25.1661H38.0692V14.1701C38.0692 9.42407 35.9301 7.11791 31.6103 7.11791Z" fill="white"></path>
-                        <path d="M49.6416 7.11743C45.2382 7.11743 40.793 9.96671 40.793 16.3086C40.793 22.6506 45.2382 25.4998 49.6416 25.4998C54.045 25.4998 58.4902 22.7174 58.4902 16.3755C58.4902 10.0336 54.045 7.11743 49.6416 7.11743ZM54.1704 16.3086C54.1704 22.0406 53.5437 24.447 49.6416 24.447C46.4497 24.4805 45.1212 23.3441 45.1212 16.3755C45.1212 10.6352 45.7562 8.23709 49.6499 8.23709C52.8334 8.20367 54.1704 9.33168 54.1704 16.3755V16.3086Z" fill="white"></path>
-                    </svg><svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="MobileMenu_headlineCross__Bht5F">
+        </div>
+        <div id="hamburger" class="Header_mobileMenuButton__9qrK8">
+            <svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="Header_mobileMenuButtonIcon__TiMFu">
+                <rect x="0.734375" y="0.758057" width="20" height="1" fill="white"></rect>
+                <rect x="0.734375" y="14.7581" width="20" height="1" fill="white"></rect>
+                <rect x="0.734375" y="7.75806" width="20" height="1" fill="white"></rect>
+            </svg>
+        </div>
+        <div id="responsive-menu" class="MobileMenu_root__xl8fC Animated_animated__ByRTS">
+            <div class="MobileMenu_headline___E_Ze">
+                <img src="images/ahimsa-logo.png" width="60">
+                <div id="menuclose">
+                    <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="MobileMenu_headlineCross__Bht5F" >
                         <rect x="0.152344" y="14.9753" width="20" height="1" transform="rotate(-45 0.152344 14.9753)" fill="white"></rect>
                         <rect width="20" height="1" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 15 14.9753)" fill="white"></rect>
-                    </svg></div>
-                <div class="MobileMenu_auth__ZWhF0"><a class="MobileMenu_authLoginButton__fxLbe" href="">Login</a><button class="CaribeanButton_root__2FylR MobileMenu_authGetStartedButton__Z_8BG">Get Started</button></div>
-                <div class="MobileMenu_navigation__flILT">
-                    <div class="Item_root__z0qbH MobileMenu_navigationItem__ftNAg">
-                        <div class="Item_title__1vHx7">
-                            <div class="">products</div>
-                        </div>
-                    </div>
-                    <div class="Item_root__z0qbH MobileMenu_navigationItem__ftNAg">
-                        <div class="Item_title__1vHx7">
-                            <div class="">about</div>
-                        </div>
-                    </div>
-                    <div class="Item_root__z0qbH MobileMenu_navigationItem__ftNAg">
-                        <div class="Item_title__1vHx7">
-                            <div class="">customers</div>
-                        </div>
-                    </div>
-                </div><a class="MobileMenu_navigationContact__TJpfX" href="blog.html">Blog</a>
-            </div>
-        </header>
-<style>
-#intro-h3,
-#intro-h1 {
-    line-height: calc((94 / var(--screen-size))*100*1vw);
-    font-weight: 200;
-    font-size: calc((44 / var(--screen-size))*100*1vw);
-    color: #ffff;
-    font-family: Degular;
-    text-transform: capitalize;
-}
-
-.specs dt,
-.specs dd {
-    color: #ffff;
-    font-family: Degular;
-}
-
-.specs {
-    font-size: 20px;
-}
-.CardOptions_rightContentSticky__5B1eO{
-        top: -moz-calc((0/var(--screen-size))*100*1vw);
-    top: calc((0 / var(--screen-size))*100*1vw);
-}
-.Part_iconItemTextTop__3XT5R {
-    font-weight: 300;
-    font-size: calc((30 / var(--screen-size))*100*1vw);
-}
-</style>
-
-<div class="pin-spacer" id="home" style="order: 0; place-self: auto; grid-area: auto / auto / auto / auto; z-index: auto; float: none; flex-shrink: 1; display: grid; margin: 0px; inset: auto; position: relative; flex-basis: auto; overflow: visible; box-sizing: border-box; width: 100%; height: 100vh; padding: 0px 0px 5700px;">
-    <div class="container" id="container" style="transform: translate(0px, 0px); left: 0px; top: 0.001px; margin: 0px; max-width: 100%; width: 100%; max-height: 100vh; height: 100vh; padding: 0px; box-sizing: border-box; position: fixed;background-image: url(images/homePageBg1.png);background-size: 100% 100%;">
-        <div class="wrapper" id="wrapper">
-            <div class="panel">
-                <div class="intro" id="intro">
-                    <img id="logo" src="images/ahimsa-logo.png" alt="ahimsa logo" style="transform: translate(0px, 0px);">
-                    <h1 id="intro-h1" style="transform: translate(0px, 0px);">Advanced Health Information Management</h1>
-                    <h3 id="intro-h3" style="transform: translate(0px, 0px);">And Social Analytics</h3>
-                </div>
-                <img id="liberty" src="images/app_laptop2.png" alt="png" style="transform: translate(-50%, 0%);">
-                <!-- <h1 id="panel-h1" style="opacity: 0; transform: translate(-50%, 0%);">150</h1> -->
-                <ul class="models">
-                    <li style="transform: translate(0px, 0px); opacity: 0;">Simple</li>
-                    <li style="transform: translate(0px, 0px); opacity: 0;">Clean</li>
-                    <li style="transform: translate(0px, 0px); opacity: 0;">Intelligent</li>
-                    <li style="transform: translate(0px, 0px); opacity: 0;">Persuasive</li>
-                </ul>
-                <div class="rotator" style="transform: translate(0px, 0px); opacity: 0;">
-                    <p>0°</p>
-                    <svg version="1.1" viewBox="0 0 10 30">
-                        <path d="M5 5.663V40" fill="none" stroke="#999" stroke-width=".92" transform="matrix(1 0 0 1.16492 0 -6.597)"></path>
-                        <circle cx="7.423" cy="7.159" r="2.577" fill="#fff" transform="translate(-2.423 -4.582)"></circle>
                     </svg>
-                    <p>360°</p>
                 </div>
-                <div class="specs" style="opacity: 0; transform: translate(-160px, 0px);">
-                    <h2 style="transform: translate(0px, 0px); opacity: 0;">Features</h2>
-                    <dl>
-                        <dt style="transform: translate(0px, 0px); opacity: 0;">Medical establishment management</dt>
-                        <dd style="transform: translate(0px, 0px); opacity: 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lectus turpis, efficitur sed mi eu, ultricies placerat ipsum.</dd>
-                        <dt style="transform: translate(0px, 0px); opacity: 0;">Remote diagnosing and monitoring</dt>
-                        <dd style="transform: translate(0px, 0px); opacity: 0;">Class aptent taciti sociosqu ad litora torquent per conubia nostra,</dd>
-                        <dt style="transform: translate(0px, 0px); opacity: 0;">Data privacy and confidentiality</dt>
-                        <dd style="transform: translate(0px, 0px); opacity: 0;">In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas</dd>
-                        
-                    </dl>
-                </div>
-                <div class="chars" style="transform: translate(260px, 0px);">
-                    <h2 style="transform: translate(0px, -20px); opacity: 0;">Features</h2>
-                    <dl>
-                        <dt style="transform: translate(0px, 0px); opacity: 0;">Medical establishment management</dt>
-                        <dd style="transform: translate(0px, 0px); opacity: 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lectus turpis, efficitur sed mi eu, ultricies placerat ipsum.</dd>
-                        <dt style="transform: translate(0px, 0px); opacity: 0;">Remote diagnosing and monitoring</dt>
-                        <dd style="transform: translate(0px, 0px); opacity: 0;">Class aptent taciti sociosqu ad litora torquent per conubia nostra,</dd>
-                        <dt style="transform: translate(0px, 0px); opacity: 0;">Data privacy and confidentiality</dt>
-                        <dd style="transform: translate(0px, 0px); opacity: 0;">In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas</dd>
-                        <!-- <dt style="transform: translate(0px, 0px); opacity: 0;">Data security</dt>
-                        <dd style="transform: translate(0px, 0px); opacity: 0;">Duis metus lectus, fermentum porta vulputate et, interdum eu ex. Morbi convallis</dd> -->
-                    </dl>
-                </div>
-                <!-- <div class="outro">
-                    <h2 style="opacity: 0; transform: translate(0px, 30px);">Liberty 150</h2>
-                    <p style="opacity: 0; transform: translate(0px, 30px);">$2999.00</p>
-                    <button style="opacity: 0; transform: translate(0px, 30px);">Learn More</button>
-                </div> -->
             </div>
-            <div class="bkg"></div>
+            <div class="MobileMenu_navigation__flILT">
+                <div class="Item_root__z0qbH MobileMenu_navigationItem__ftNAg">
+                    <div class="Item_title__1vHx7">
+                        <div class="responsive-menu-link"><a href="#product">products</a></div>
+                    </div>
+                </div>
+                <div class="Item_root__z0qbH MobileMenu_navigationItem__ftNAg">
+                    <div class="Item_title__1vHx7">
+                        <div class="responsive-menu-link"><a href="#about">about</a></div>
+                    </div>
+                </div>
+                <div class="Item_root__z0qbH MobileMenu_navigationItem__ftNAg">
+                    <div class="Item_title__1vHx7">
+                        <div class="responsive-menu-link"><a href="#contact">contact</a></div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- <svg version="1.1" id="mask">
-            <defs>
-                <clipPath id="wrapMask">
-                    <rect id="wrapWin" width="1000" height="800" fill="black" style="height: 800px;"></rect>
-                </clipPath>
-            </defs>
-        </svg> -->
+    </header>
+    <style>
+    #intro-h3,
+    #intro-h1 {
+        line-height: calc((94 / var(--screen-size))*100*1vw);
+        font-weight: 200;
+        font-size: calc((44 / var(--screen-size))*100*1vw);
+        color: #ffff;
+        font-family: Degular;
+        text-transform: capitalize;
+    }
+
+    .specs dt,
+    .specs dd {
+        color: #ffff;
+        font-family: Degular;
+    }
+
+    .specs {
+        font-size: 20px;
+    }
+
+    .CardOptions_rightContentSticky__5B1eO {
+        top: -moz-calc((0/var(--screen-size))*100*1vw);
+        top: calc((0 / var(--screen-size))*100*1vw);
+    }
+
+    .Part_iconItemTextTop__3XT5R {
+        font-weight: 300;
+        font-size: calc((30 / var(--screen-size))*100*1vw);
+    }
+
+    .a {
+        opacity: 0;
+    }
+
+    .b {
+        opacity: 1;
+    }
+
+
+    /*mob-view*/
+    .panel img#ahimsa-slider {
+        width: 95%;
+        position: absolute;
+        z-index: 10;
+        bottom: -250px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .ahimsa-models {
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    z-index: 11;
+}
+.ahimsa-models li {
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #f0f0f0;
+    line-height: 2rem;
+    list-style-type: square;
+    font-family: Degular-Medium,sans-serif;
+    font-weight: 200;
+}
+.ahimsa-specs,
+.ahimsa-chars {
+  position: absolute;
+  top: 40%;
+  width: 70%;
+  z-index: 20;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10% 1fr;
+  font-family: Degular-Medium,sans-serif;
+  font-weight: 200;
+}
+.ahimsa-specs h2,
+.ahimsa-chars h2 {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  color: #ffffff;
+  text-shadow: none;
+  font-family: Degular-Medium,sans-serif;
+  font-weight: 200;
+  font-size: calc((20 / var(--screen-size))*100*1vw);
+  line-height: calc((0 / var(--screen-size))*100*1vw);
+  padding-bottom: 30px;
+}
+.ahimsa-specs dl:nth-child(0),
+.ahimsa-chars dl:nth-child(0) {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.ahimsa-specs dl:nth-child(1),
+.ahimsa-chars dl:nth-child(1) {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.ahimsa-specs dl dt,
+.ahimsa-chars dl dt {
+  text-transform: capitalize;
+  margin-bottom: 15px;
+  color: #ffff;
+  font-family: Degular-Medium,sans-serif;
+  font-size: 1rem;
+}
+.ahimsa-specs dl dd,
+.ahimsa-chars dl dd {
+  margin-bottom: 30px;
+  font-size: 0.8rem;
+  color: #717171;
+  font-family: Degular-Medium,sans-serif;
+}
+#hamburger{
+    margin-top: 20px;
+}
+    </style>
+
+
+
+        <div class="pin-spacer normal-view" id="home" style="order: 0; place-self: auto; grid-area: auto / auto / auto / auto; z-index: auto; float: none; flex-shrink: 1; display: grid; margin: 0px; inset: auto; position: relative; flex-basis: auto; overflow: visible; box-sizing: border-box; width: 100%; height: 100vh; padding: 0px 0px 5700px;">
+        <div class="container" id="container" style="transform: translate(0px, 0px); left: 0px; top: 0.001px; margin: 0px; max-width: 100%; width: 100%; max-height: 100vh; height: 100vh; padding: 0px; box-sizing: border-box; position: fixed;background-image: url(images/homePageBg1.png);background-size: 100% 100%;">
+            <div class="wrapper" id="wrapper">
+                <div class="panel">
+                    <div class="intro" id="intro">
+                        <img id="logo" src="images/ahimsa-logo.png" alt="ahimsa logo" style="transform: translate(0px, 0px);">
+                        <h1 id="intro-h1" style="transform: translate(0px, 0px);">Advanced Health Information Management</h1>
+                        <h3 id="intro-h3" style="transform: translate(0px, 0px);">And Social Analytics</h3>
+                    </div>
+                    <img id="liberty" src="images/app_laptop2.png" alt="png" style="transform: translate(-50%, 0%);">
+                    <ul class="models">
+                        <li style="transform: translate(0px, 0px); opacity: 0;">Simple</li>
+                        <li style="transform: translate(0px, 0px); opacity: 0;">Clean</li>
+                        <li style="transform: translate(0px, 0px); opacity: 0;">Intelligent</li>
+                        <li style="transform: translate(0px, 0px); opacity: 0;">Persuasive</li>
+                    </ul>
+                    <div class="rotator" style="transform: translate(0px, 0px); opacity: 0;">
+                        <p>0°</p>
+                        <svg version="1.1" viewBox="0 0 10 30">
+                            <path d="M5 5.663V40" fill="none" stroke="#999" stroke-width=".92" transform="matrix(1 0 0 1.16492 0 -6.597)"></path>
+                            <circle cx="7.423" cy="7.159" r="2.577" fill="#fff" transform="translate(-2.423 -4.582)"></circle>
+                        </svg>
+                        <p>360°</p>
+                    </div>
+                    <div class="specs" style="opacity: 0; transform: translate(-160px, 0px);">
+                        <h2 style="transform: translate(0px, 0px); opacity: 0;">Features</h2>
+                        <dl>
+                            <dt style="transform: translate(0px, 0px); opacity: 0;">Medical establishment management</dt>
+                            <dd style="transform: translate(0px, 0px); opacity: 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lectus turpis, efficitur sed mi eu, ultricies placerat ipsum.</dd>
+                            <dt style="transform: translate(0px, 0px); opacity: 0;">Remote diagnosing and monitoring</dt>
+                            <dd style="transform: translate(0px, 0px); opacity: 0;">Class aptent taciti sociosqu ad litora torquent per conubia nostra,</dd>
+                            <dt style="transform: translate(0px, 0px); opacity: 0;">Data privacy and confidentiality</dt>
+                            <dd style="transform: translate(0px, 0px); opacity: 0;">In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas</dd>
+                        </dl>
+                    </div>
+                    <div class="chars" style="transform: translate(260px, 0px);">
+                        <h2 style="transform: translate(0px, -20px); opacity: 0;">Features</h2>
+                        <dl>
+                            <dt style="transform: translate(0px, 0px); opacity: 0;">Medical establishment management</dt>
+                            <dd style="transform: translate(0px, 0px); opacity: 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lectus turpis, efficitur sed mi eu, ultricies placerat ipsum.</dd>
+                            <dt style="transform: translate(0px, 0px); opacity: 0;">Remote diagnosing and monitoring</dt>
+                            <dd style="transform: translate(0px, 0px); opacity: 0;">Class aptent taciti sociosqu ad litora torquent per conubia nostra,</dd>
+                            <dt style="transform: translate(0px, 0px); opacity: 0;">Data privacy and confidentiality</dt>
+                            <dd style="transform: translate(0px, 0px); opacity: 0;">In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="bkg"></div>
+            </div>
+        </div>
     </div>
-</div>
+
+
+
+
+    <div class="pin-spacer responsive-view" id="home" style="order: 0; place-self: auto; grid-area: auto / auto / auto / auto; z-index: auto; float: none; flex-shrink: 1; display: none; margin: 0px; inset: auto; position: relative; flex-basis: auto; overflow: visible; box-sizing: border-box; width: 100%; height: 6000px; padding: 0px 0px 0px;">
+        <div class="container" id="container" style="transform: translate(0px, 0px); left: 0px; top: 0.001px; margin: 0px; max-width: 100%; width: 100%; max-height: 100%; height: 100%; padding: 0px; box-sizing: border-box; position: fixed;background-image: url(images/homePageBg1.png);background-repeat: no-repeat;background-size: cover;">
+            <div class="wrapper" id="wrapper">
+                <div class="panel">
+                    <div class="intro" id="intro">
+                        <img id="logo" src="images/ahimsa-logo.png" alt="ahimsa logo" style="transform: translate(0px, 0px);">
+                        <h1 id="intro-h1" style="transform: translate(0px, 0px);">Advanced Health Information Management</h1>
+                        <h3 id="intro-h3" style="transform: translate(0px, 0px);">And Social Analytics</h3>
+                    </div>
+                    <img id="ahimsa-slider" src="images/app_laptop2.png" alt="png" style="transform: translate(-50%, 0%);">
+                    <!-- <h1 id="panel-h1" style="opacity: 0; transform: translate(-50%, 0%);">150</h1> -->
+                    <ul class="ahimsa-models">
+                        <li style="transform: translate(0px, 0px); opacity: 0;">Simple</li>
+                        <li style="transform: translate(0px, 0px); opacity: 0;">Clean</li>
+                        <li style="transform: translate(0px, 0px); opacity: 0;">Intelligent</li>
+                        <li style="transform: translate(0px, 0px); opacity: 0;">Persuasive</li>
+                    </ul>
+                    
+                    <div class="ahimsa-specs" style="opacity: 0; transform: translate(-160px, 0px);">
+                        <h2 style="transform: translate(0px, 0px); opacity: 0;">Features</h2>
+                        <dl>
+                            <dt style="transform: translate(0px, 0px); opacity: 0;">Medical establishment management</dt>
+                            <dd style="transform: translate(0px, 0px); opacity: 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lectus turpis, efficitur sed mi eu, ultricies placerat ipsum.</dd>
+                            <dt style="transform: translate(0px, 0px); opacity: 0;">Remote diagnosing and monitoring</dt>
+                            <dd style="transform: translate(0px, 0px); opacity: 0;">Class aptent taciti sociosqu ad litora torquent per conubia nostra,</dd>
+                            <dt style="transform: translate(0px, 0px); opacity: 0;">Data privacy and confidentiality</dt>
+                            <dd style="transform: translate(0px, 0px); opacity: 0;">In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas</dd>
+                        </dl>
+                    </div>
+                    <div class="ahimsa-chars" style="transform: translate(260px, 0px);">
+                        <h2 style="transform: translate(0px, -20px); opacity: 0;">Features</h2>
+                        <dl>
+                            <dt style="transform: translate(0px, 0px); opacity: 0;">Medical establishment management</dt>
+                            <dd style="transform: translate(0px, 0px); opacity: 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lectus turpis, efficitur sed mi eu, ultricies placerat ipsum.</dd>
+                            <dt style="transform: translate(0px, 0px); opacity: 0;">Remote diagnosing and monitoring</dt>
+                            <dd style="transform: translate(0px, 0px); opacity: 0;">Class aptent taciti sociosqu ad litora torquent per conubia nostra,</dd>
+                            <dt style="transform: translate(0px, 0px); opacity: 0;">Data privacy and confidentiality</dt>
+                            <dd style="transform: translate(0px, 0px); opacity: 0;">In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="bkg"></div>
+            </div>
+        </div>
+    </div>
 
     
+    <style>
+    .panel img#liberty1 {
+        width: 50%;
+        position: relative;
+        z-index: 10;
+        bottom: -40px;
+        transform: translateX(-50%);
+    }
+
+    .animation-text img {
+        width: 70px;
+    }
+
+    .animation-text {
+        transform: translateY(30px);
+    }
+
+    @keyframes movetext {
+        0% {
+            transform: translateY(500px);
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
+    }
+
+    .animation-text h1 {
+        text-align: center;
+        line-height: calc((40 / var(--screen-size))*100*1vw);
+        font-weight: 200;
+        font-size: calc((20 / var(--screen-size))*100*1vw);
+        color: #ffff;
+        font-family: Degular;
+        text-transform: capitalize;
+    }
+
+    .home-section {
+        height: 100vh;
+        width: 98%;
+        position: relative;
+        border: solid 1px #fff;
+        margin: auto 50px 0px;
+    }
+    </style>
     <div style="width:100%;position: relative;">
         <main class="Home_root__RQg_P" id="main">
-
             <section class="CardOptions_root__NSEI7" id="product" style="background-image: url(images/device-presentation-image-1.jpg);color:#0000;background: #76aaef40;">
                 <div class="CardOptions_mainTitle__9WPXP" style="padding-top: 100px;">
-                    <div style="color:#fff;">Lorem Ipsum</div>
+                    <div class="navtest" style="color:#fff;">Lorem Ipsum</div>
                     <div class="CardOptions_box__91vr_">
                         <div style="color:#fff;">dummy text</div>
                         <span class="CardOptions_dynamicBox__IpLDd">
@@ -199,16 +359,14 @@
                     </div>
                 </div>
                 <style>
-                    .Part_partInfoDescription__tP1_V span {
-                        color: #fff;
-                    }
+                .Part_partInfoDescription__tP1_V span {
+                    color: #fff;
+                }
                 </style>
-                
-                
                 <div class="CardOptions_cards__o9cX9">
-                    <section class="Part_part__qLmOl" >
+                    <section class="Part_part__qLmOl">
                         <div class="Part_mobImg__of2vq">
-                            <img src="images/dummy-image.png" alt="Corporate-cards-mobile 1" />
+                            <img src="images/screen1.png" alt="Corporate-cards-mobile 1" />
                         </div>
                         <div class="Part_partInfo__znN0e">
                             <h3 class="Part_partInfoTitle__Wqebm">The standard Lorem Ipsum </h3>
@@ -231,9 +389,9 @@
                         </div>
                     </section>
                     <section class="Part_part__qLmOl" id="two">
-                        <!-- <div class="Part_mobImg__of2vq">
-                            <img src="images/Corporate-cards-mobile_8.png" alt="Corporate-cards-mobile 8" />
-                        </div> -->
+                        <div class="Part_mobImg__of2vq">
+                            <img src="images/screen2.png" alt="Corporate-cards-mobile 1" />
+                        </div>
                         <div class="Part_partInfo__znN0e">
                             <h3 class="Part_partInfoTitle__Wqebm">The standard Lorem Ipsum </h3>
                             <div class="Part_partInfoDescription__tP1_V">Lorem ipsum <span>dolor sit amet, consectetur adipiscing elit, </span>, sed do eiusmod tempor <span>unlimited virtual and physical cards</span> incididunt ut labore et dolore magna aliqua.</div>
@@ -262,9 +420,9 @@
                     }
                     </style>
                     <section class="Part_part__qLmOl" id="three">
-                        <!-- <div class="Part_mobImg__of2vq">
-                            <img src="images/Corporate-cards-mobile_3.png" alt="" />
-                        </div> -->
+                        <div class="Part_mobImg__of2vq">
+                            <img src="images/screen3.png" alt="Corporate-cards-mobile 1" />
+                        </div>
                         <div class="Part_partInfo__znN0e">
                             <h3 class="Part_partInfoTitle__Wqebm">The standard Lorem Ipsum </h3>
                             <div class="Part_partInfoDescription__tP1_V">Lorem ipsum <span>dolor sit amet, consectetur adipiscing elit, </span>, sed do eiusmod tempor <span>unlimited virtual and physical cards</span> incididunt ut labore et dolore magna aliqua.</div>
@@ -292,14 +450,13 @@
                     </div>
                 </div>
             </section>
-
             <section class="Experience_root__csOzn" id="about">
                 <h1 class="Experience_title__VYjZQ Animated_animated__ByRTS Animated_fadeIn__CK_Tf" style="animation-timing-function:cubic-bezier(0.94, 0.22, 0.42, 0.83);animation-duration:200ms">Lorem Ipsum is simply dummy text.</h1>
                 <div class="Experience_content__QrQFF">
                     <div class="Experience_blockList__1wk0M">
                         <div class="Experience_block__Vju__ Animated_animated__ByRTS Animated_fadeIn__CK_Tf" style="animation-timing-function:cubic-bezier(0.94, 0.22, 0.42, 0.83);animation-duration:200ms">
                             <div class="Experience_blockImageWrapper__PzjtC">
-                                <div class="Experience_blockImageInner__KB2wr"><img class="Experience_blockImage__3cAAj" alt="credit" src="images/dummy-image.png" /></div>
+                                <div class="Experience_blockImageInner__KB2wr"><img class="Experience_blockImage__3cAAj" alt="credit" src="images/app_laptop2.png" /></div>
                             </div>
                             <div class="Experience_blockText__ccQQd Animated_animated__ByRTS Animated_fadeIn__CK_Tf" style="animation-timing-function:cubic-bezier(0.94, 0.22, 0.42, 0.83);animation-duration:200ms">
                                 <div class="Experience_blockTextTitle__7Am_h">Lorem Ipsum is simply dummy text of the printing.</div>
@@ -310,7 +467,7 @@
                         </div>
                         <div class="Experience_block__Vju__ Animated_animated__ByRTS Animated_fadeIn__CK_Tf" style="animation-timing-function:cubic-bezier(0.94, 0.22, 0.42, 0.83);animation-duration:200ms">
                             <div class="Experience_blockImageWrapper__PzjtC">
-                                <div class="Experience_blockImageInner__KB2wr"><img class="Experience_blockImage__3cAAj" alt="credit-term-options" src="images/dummy-image.png" /></div>
+                                <div class="Experience_blockImageInner__KB2wr"><img class="Experience_blockImage__3cAAj" alt="credit-term-options" src="images/Banking__1_-min.png" /></div>
                             </div>
                             <div class="Experience_blockText__ccQQd Animated_animated__ByRTS Animated_fadeIn__CK_Tf" style="animation-timing-function:cubic-bezier(0.94, 0.22, 0.42, 0.83);animation-duration:200ms">
                                 <div class="Experience_blockTextTitle__7Am_h">Lorem Ipsum is simply dummy text of the printing.</div>
@@ -329,13 +486,13 @@
                     <h2 class="FooterGrow_title__siwtB">Lorem Ipsum is simply dummy text of the printing. </h2>
                     <p class="FooterGrow_description__ICDDT">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
                     <div class="FooterGrow_indicators__91fbz">
-                        <div class="FooterGrow_indicatorsItem__985wa"><img src="images/s7.svg" alt=""/>
+                        <div class="FooterGrow_indicatorsItem__985wa"><img src="images/s7.svg" alt="" />
                             <div class="FooterGrow_indicatorsItemText__0P_eV">
                                 <div class="FooterGrow_indicatorsItemTextTitle__RlcCF">Analytics</div>
                                 <div class="FooterGrow_indicatorsItemTextSubtitle__qc_5L">Data services</div>
                             </div>
                         </div>
-                        <div class="FooterGrow_indicatorsItem__985wa"><img src="images/s5.svg" alt=""/>
+                        <div class="FooterGrow_indicatorsItem__985wa"><img src="images/s5.svg" alt="" />
                             <div class="FooterGrow_indicatorsItemText__0P_eV">
                                 <div class="FooterGrow_indicatorsItemTextTitle__RlcCF">Patient referral</div>
                                 <div class="FooterGrow_indicatorsItemTextSubtitle__qc_5L">Service</div>
@@ -372,13 +529,12 @@
                         <div class="FooterGrow_emailFieldWrapper__RiMTr">
                             <div class="EmailField_root__tR1cv"><button class="EmailField_button__7uxvR">Get Started</button></div>
                         </div>
-                        
                     </div>
                 </div>
             </div>
         </main>
         <footer class="Footer_root__OULa2" id="contact">
-            <div class="Footer_lineWrapper__y_x7M" >
+            <div class="Footer_lineWrapper__y_x7M">
                 <div class="Footer_line__OCqNE" style="background: none;"></div>
             </div>
             <div class="Links_root__dRYzB">
@@ -447,9 +603,11 @@
             </div>
         </footer>
     </div>
+    <script src="js/jquery.js"></script>
     <script src="js/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
     <script src="js/gsap.min.js"></script>
     <script src="js/ScrollTrigger.min.js"></script>
+    <script id="rendered-js" src="js/mob.js"></script>
     <script id="rendered-js">
     gsap.registerPlugin("ScrollTrigger");
 
@@ -969,7 +1127,7 @@
         }).
 
 
-    fromTo(
+    from(
         "#liberty", {
             scale: 0.8,
             y: -300
@@ -1044,75 +1202,79 @@
 
 
     gsap.config({
-      autoSleep: 60,
-      force3D: false,
-      nullTargetWarn: false,
-      trialWarn: false,
-      units: {left: "%", top: "%", rotation: "rad"}
+        autoSleep: 60,
+        force3D: false,
+        nullTargetWarn: false,
+        trialWarn: false,
+        units: { left: "%", top: "%", rotation: "rad" }
     });
-
-
-
-
-
     </script>
-    <script src="js/jquery.js"></script>
 
-<script>
 
-    $(window).scroll(function() {
 
-        if ($(this).scrollTop()>4700)
-         {
-            $('.panel').fadeOut();
-            $('#header-anchor').fadeIn();
-            
-         }
-        else
-         {
-          $('.panel').fadeIn();
-          $('#header-anchor').fadeOut();
-         }
-    });
 
-    $(window).scroll(function () {
+    <script>
+    $(document).ready(function() {
+        $(window).scroll(function() {
 
-        var $height = $(window).scrollTop();
+            if ($(this).scrollTop() > 4700) {
+                $('.panel').fadeOut();
+                $('#header-anchor').fadeIn();
+            } else {
+                $('.panel').fadeIn();
+                $('#header-anchor').fadeOut();
+            }
 
-        if ($height >= 6200) {
-            
-            $(".image-scroll-1").attr("src","images/screen1.png");
-        }
+            var $height = $(window).scrollTop();
 
-        if ($height >= 6500) {
+            if ($height >= 6200) {
+                $(".image-scroll-1").attr("src", "images/screen1.png");
+            }
 
-            $(".image-scroll-1").attr("src","images/screen2.png");
-        }
+            if ($height >= 6500) {
+                $(".image-scroll-1").attr("src", "images/screen2.png");
+            }
 
-        if ($height >= 6800) {
-            
-            $(".image-scroll-1").attr("src","images/screen3.png");
-        }
-    });
-    $( document ).ready(function() {
+            if ($height >= 6800) {
+                $(".image-scroll-1").attr("src", "images/screen3.png");
+            }
+
+        });
+
+
         $("a[href^='#']").click(function(e) {
             e.preventDefault();
-            
             var position = $($(this).attr("href")).offset().top;
 
             $("body, html").animate({
                 scrollTop: position
             } /* speed */ );
         });
+
+        $('#responsive-menu').hide();
+
+        $("#hamburger").click(function(){
+            $("#responsive-menu").show();
+        });
+        $("#menuclose").click(function(){
+            $("#responsive-menu").hide();
+        });
+        $(".responsive-menu-link a").click(function(){
+            $("#responsive-menu").hide();
+        });
+        
+
+
+        window.console = window.console || function(t) {};
+
+        if (document.location.search.match(/type=embed/gi)) {
+            window.parent.postMessage("resize", "*");
+        }
+
     });
 
-
-       
-
-</script>
-
-
-
+    
+    </script>
 
 </body>
 

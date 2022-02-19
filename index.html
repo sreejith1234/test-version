@@ -40,6 +40,14 @@
                 </div>
             </div>
         </div>
+    </header>
+    <header style="display:none;" class="Header_root__sMz8f" id="responsive-header-anchor">
+         <div class="Header_menuWrapper__4fgxo">
+            <div style="display:flex;width:100%;" class="Header_menuWrapperLogo__RTgY_">
+                <img class="ahimsa-logo" style="width: 60px;" src="images/ahimsa-logo.png" alt="ahimsa global logo">
+                <span class="ahimsa-text" style="text-align: left;color: #7993cb;text-transform: uppercase;letter-spacing: 1px;font-size:14px;">Advanced Health Information management <br> And Social Analytics</span>
+            </div>
+        </div>
         <div id="hamburger" class="Header_mobileMenuButton__9qrK8">
             <svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="Header_mobileMenuButtonIcon__TiMFu">
                 <rect x="0.734375" y="0.758057" width="20" height="1" fill="white"></rect>
@@ -252,7 +260,7 @@
 
 
 
-    <div class="pin-spacer responsive-view" id="home" style="order: 0; place-self: auto; grid-area: auto / auto / auto / auto; z-index: auto; float: none; flex-shrink: 1; display: none; margin: 0px; inset: auto; position: relative; flex-basis: auto; overflow: visible; box-sizing: border-box; width: 100%; height: 2000px; padding: 0px 0px 0px;">
+    <div class="pin-spacer responsive-view" id="home" style="order: 0; place-self: auto; grid-area: auto / auto / auto / auto; z-index: auto; float: none; flex-shrink: 1; display: none; margin: 0px; inset: auto; position: relative; flex-basis: auto; overflow: visible; box-sizing: border-box; width: 100%; height: 1000px; padding: 0px 0px 0px;">
         <div class="container" id="container" style="transform: translate(0px, 0px); left: 0px; top: 0.001px; margin: 0px; max-width: 100%; width: 100%; max-height: 100%; height: 100%; padding: 0px; box-sizing: border-box; position: fixed;background-image: url(images/homePageBg1.png);background-repeat: no-repeat;background-size: cover;">
             <div class="wrapper wrapper-mv" id="wrapper">
                 <div class="panel">
@@ -1171,11 +1179,13 @@
             }
 
 
-            if ($height >= 1200) {
+            if ($height >= 300) {
                 $('.wrapper-mv').fadeOut();
+                $('#responsive-header-anchor').fadeIn();
             }
             else {
                 $('.wrapper-mv').fadeIn();
+                $('#responsive-header-anchor').fadeOut();
             }
 
         });
